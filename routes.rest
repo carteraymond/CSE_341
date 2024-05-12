@@ -19,17 +19,29 @@ Content-Type: application/json
     "birthday": "05/12/2013"
 }
 
+### Create contact NULL
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "null",
+    "lastName": "null",
+    "email": "null",
+    "favoriteColor": "null",
+    "birthday": "null"
+}
+
 
 ### PUT contact
-PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
+PUT http://localhost:8080/contacts/664048108238e90e430f7c96 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Sarah",
-    "lastName":"Birch",
-    "email":"test@gmail.com",
-    "favoriteColor":"Green",
-    "birthday":"12/12/20"
+    "firstName": "Jessica",
+    "lastName": "Travis",
+    "email": "JTravis@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "05/12/2010"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6640465cd9706f4cf7ff8b70 HTTP/1.1
+DELETE http://localhost:8080/contacts/664048108238e90e430f7c96 HTTP/1.1
